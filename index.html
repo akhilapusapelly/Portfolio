@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhila - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "PT Serif", serif;
+            font-style: normal;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            height: 70px;
+            width: 100%;
+            padding: 0;
+            background-color: rgb(18, 18, 60);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(147, 81, 209);
+            font-size: 1.4rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height:1.2px;
+            margin: 40px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            padding: 50px 0;
+            align-items: center;
+        }
+        .firstSection > div{
+            
+        }
+        .leftSection{
+            font-size: 3rem;
+        }
+        .rightSection img{
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .abtSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .abtSection h1{
+            font-size: 2rem;
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1{
+            font-size: 2rem;
+        }
+
+        .thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .thirdSection h1{
+            font-size: 2rem;
+        }
+
+        .fourthSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .fourthSection h1{
+            font-size: 2rem;
+        }
+
+        .fifthSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            font-size: 1rem;
+            font-weight: 600px;
+        }
+
+        .fifthSection a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .fifthSection h1{
+            font-size: 2rem;
+        }
+
+        .purple{
+            color: rgb(147, 81, 209);
+        }
+
+        #element{
+            color: rgb(221, 213, 230);
+        }
+
+        .vertical_text{
+            position: relative;
+            top: 75px;
+            width: 300px;
+            margin: 10px 10px;
+        }
+
+        .vertical_desc{
+            margin: 100px 10px;
+            width: 33.33%;
+        }
+
+        footer{
+            background-color: rgb(10, 2, 78);
+            height: 230px;
+            color: gray;
+        }
+
+        .projectsClass{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 12px;
+        }
+
+        .projectButton{
+            background-color: rgb(0,0,33);
+            border-radius: 5px;
+            width: 00px;
+            height: 10px;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 10px 2px;
+        }
+
+        .projectButton:hover{
+            background-color: rgb(63, 6, 116);
+        }
+
+        .pbutton1{
+            padding: 20px 20px;
+            margin: 20px 10px;
+            width: 33.33%;
+            height: 200px;
+            background-image: url("prj1.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .pbutton2{
+            padding: 20px 20px;
+            margin: 20px 10px;
+            width: 33.33%;
+            height: 200px;
+            background-image: url("prj2.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .pbutton3{
+            padding: 20px 20px;
+            margin: 20px 10px;
+            width: 33.33%;
+            height: 200px;
+            background-image: url("prj3.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .cntSection{
+            display:contents;
+            align-items: center;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 110px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color: gray;
+        }
+        .footer > div{
+            width: 233px;
+        }
+
+        footer .footer_rights{
+            text-align: center;
+            padding: 50px 50px;
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Akhila's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#AboutSection" id = "ScrollButton1">About</a></li>
+                    <li><a href="#SkillsSection"  id = "ScrollButton2">Skills</a></li>
+                    <li><a href="#ProjectsSection" id = "ScrollButton3">Projects</a></li>
+                    <li><a href="#ContactSection" id = "ScrollButton4">Contact Me</a></li>
+                    <li><a href="Akhila_Resume_pdf.pdf" download="Akhila_Resume_pdf.pdf">Download Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id = "HomeSection">
+            <div class="leftSection">
+                Hi, My Name is <span class = "purple">Akhila</span>
+                
+                <!-- <div>
+                    I build things using code!
+                </div> -->
+                <div>
+                    <span id="element"></span>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="header_img.webp" alt="">
+            </div>
+        </section>
+
+        <section class = "abtSection" id = "AboutSection">
+            <br><br><br><br><br><br>
+            <h1>About</h1>
+            <p>
+                A soon-to-be graduate in Computer Science, I'm driven by a passion for software development and a strong foundation in Java, Python, and C. Proficient in algorithm design and adept at problem-solving, I thrive in collaborative environments. With expertise in data structures, algorithms, web technologies, and SQL, I've achieved notable successes, including winning the Code Hackathon at a national technical fest. My published research on "Emotion-Based Music Genre Recommendation Using Machine Learning Algorithms" underscores my commitment to innovation. Eager to embark on new challenges and contribute positively to dynamic teams, I bring enthusiasm, expertise, and a growth mindset to every endeavor.
+            </p>
+        </section>
+
+        <section class="secondSection">
+            <br>
+            <br><br>
+            <h1>Education</h1>
+            <br>
+            <div class="box">
+                Schooling(10th Standard) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- St. Mary's Bethany Convent Vidyalaya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 9.3 GPA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2017 - 2018]
+                <br>
+                <br>
+                Intermediate(12th Standard MPC) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Narayana Junior College &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 93.6% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;[2019 - 2020]
+                <br>
+                <br>
+                Bachelor of Technology(Computer Science and Engineering) &nbsp;- Malla Reddy Engineering College For Women &nbsp;&nbsp;- 9.09 CGPA &nbsp;&nbsp;&nbsp;&nbsp;[2020- 2024]
+            </div>
+        </section>
+        <section class="thirdSection" id = "SkillsSection">
+            <br><br><br><br><br><br>
+            <h1>Skills</h1>
+            <br>
+            Programming Languages&nbsp; : &nbsp;&nbsp;Java, Python, C 
+            <br><br>
+            Programming Concepts &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;DSA using Java, OOPs through Java, DBMS using MySQL
+            <br><br>
+            Technologies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;Web Technologies(HTML,CSS, Basics of Javascript), Data Science, Artificial Intelligence, Machine Learning
+        </section>
+
+        <section class="fourthSection" id="ProjectsSection">
+            <br><br><br><br><br><br>
+            <h1>Projects</h1>
+            <div class="projectsClass">
+                <div class="pbutton1">
+                    <a class = "projectButton" href="https://github.com/akhilapusapelly/Autonomous_Traffic_Signals">Autonomous Traffic Signals</a>
+                </div>
+                <div class="pbutton2">
+                    <a class = "projectButton" href="https://github.com/akhilapusapelly/Crop_Predictor_And_Demand_Visualizer">Crop Predictor and Demand Visualizer</a>
+                </div>
+                <div class="pbutton3">
+                    <a class = "projectButton" href ="https://github.com/akhilapusapelly/Emotion_Based_Music_Recommendation">Emotion based Music Recommendation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifthSection" id="ContactSection">
+            <br><br><br><br><br><br>
+            <br>
+            <h1>Contact Me</h1>
+            <br>
+                <div class="cntSection">
+                    Name : Pusa Pelly Akhila 
+                    <br>
+                    Contact: <a href="tel:9392424434"> +91 9392424434</a>
+                    <br>
+                    Email : <a href="mailto:akhilapusapelly@gmail.com">akhilapusapelly@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_1">
+                <h3>Akhila's Portfolio</h3>
+            </div>
+
+            <div class="foot_2">
+                <ul>
+                    <li><a href="#HomeSection">Home</a></li>
+                    <li><a href="#AboutSection">About</a></li>
+                    <li><a href="#ContactSection">Contact</a></li>
+                </ul>
+            </div>
+            <div class="foot_3">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/akhilapusapelly/">linkedin</a></li>
+                    <li><a href="https://github.com/akhilapusapelly">github</a></li>
+                    <li><a href="https://leetcode.com/akhila_pp/">leetcode</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/akhilapusapelly">hackerrank</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer_rights">
+            www.akhilaportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['I build things using Code!'],
+      typeSpeed: 50,
+    });
+
+
+  </script>
+</body>
+</html>
